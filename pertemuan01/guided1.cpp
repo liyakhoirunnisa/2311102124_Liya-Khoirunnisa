@@ -3,6 +3,8 @@
 
 using namespace std;
 
+//Tipe data primitif Liya
+
 int main() {
     char op;
     float num1, num2;
@@ -31,9 +33,8 @@ int main() {
         cout << "Error! Division by zero is not allowed.";
     }
     break;
-
-default:
-    cout << "Error! Operator is not correct";
+    default:
+        cout << "Error! Operator is not correct";
     }
     return 0;
 }
