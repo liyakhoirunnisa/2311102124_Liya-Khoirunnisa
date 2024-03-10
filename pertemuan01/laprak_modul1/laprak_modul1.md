@@ -5,7 +5,6 @@
 
 Tipe data merupakan sebuah jenis nilai yang ditampung dalam variabel yang nilainya sudah ditentukan sebelumnya. Tipe data ini wajib ada ketika ingin membuat sebuah program agar memiliki nilai yang jelas dan spesifik.
 
-Tipe data primitif adalah
 1. Tipe data primitif<br/>
 Tipe data primitif adalah tipe data yang sudah dibuat oleh sistem dan tidak diturunkan dari tipe data lain. Tipe data ini mencangkup :
     •	Int  adalah tipe data untuk menyimpan bilangan bulat dengan bit
@@ -20,7 +19,7 @@ Tipe data koleksi adalah jenis tipe data yang digunakan untuk menghimpun kumpula
 
 ## Guided 
 
-### 1. [Tipe Data Primitif]
+### 1. Tipe Data Primitif
 
 ```C++
 #include <iostream>
@@ -65,7 +64,7 @@ int main() {
 ```
 Kode di atas adalah sebuah program kalkulator sederhana yang memungkinkan pengguna untuk memilih operasi aritmatika dan pengguna diminta untuk memasukkan operator yang diinginkan dan diminta untuk memasukkan 2 bilangan untuk dihitung. Pada program di atas, terdapat dua tipe data primitif, yaitu char dan float. Tipe data char digunakan untuk menyimpan operator yang dimasukkan pengguna. Tipe data float digunakan untuk menyimpan 2 bilangan yang dimasukkan pengguna.
 
-### 2. [Tipe Data Abstrak]
+### 2. Tipe Data Abstrak
 
 ```C++
 #include <stdio.h>
@@ -109,7 +108,7 @@ int main() {
 ```
 Kode di atas digunakan untuk mencetak isi dari dari struct mahasiswa. Terdapat sebuah struct mahasiswa yang terdiri dari array name bertipe data char dengan ukuran 50, array address bertipe data char dengan ukuran 100, dan variabel age bertipe data int. Di dalam fungsi main, inisialisasi dan deklarasi objek mhs1 dan mhs2 pada struct mahasiswa dengan nilai tertentu. Kemudian nilai dicetak ke layar. Pada program di atas, terdapat tipe data abstrak yaitu struct.
 
-### 3. [Tipe Data Koleksi]
+### 3. Tipe Data Koleksi
 
 ```C++
 #include <iostream>
@@ -141,7 +140,7 @@ Kode di atas digunakan untuk mencetak isi dari array. Terdapat library <array> y
 
 ## Unguided 
 
-### 1. [Buatlah program menggunakan tipe data primitif minimal dua fungsi dan bebas. Menampilkan program, jelaskan program tersebut dan ambil kesimpulan dari materi tipe data primitif!]
+### 1. Buatlah program menggunakan tipe data primitif minimal dua fungsi dan bebas. Menampilkan program, jelaskan program tersebut dan ambil kesimpulan dari materi tipe data primitif!
 
 ```C++
 #include <iostream>
@@ -157,7 +156,7 @@ int main() {
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
-### 2. [Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya!]
+### 2. Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya!
 
 ```C++
 #include <iostream>
@@ -173,7 +172,7 @@ int main() {
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
-### 2. [Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map!]
+### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map!
 
 ```C++
 #include <iostream>
