@@ -296,11 +296,9 @@ int main() {
 
 Kode di atas digunakan untuk mencetak struct dan class. Pada program di atas terdapat struct Mahasiswa_2124 yang menampung nama, jurusan, dan kelas mahasiswa. Dan juga terdapat class Dosen_2124 yang menampung nama dosen dan mata kuliah yang diampu. Membuat objek mhs1 dari struct Mahasiswa_2124 yang diisi dengan nilai nama, jurusan, dan kelas mahasiswa. Dan membuat objek dsn1 dari class Dosen_2124 yang diisi dengan nama dosen dan mata kuliah yang diampu. Kemudian informasi yang diberikan akan dicetak ke layar.
 
-Fungsi Class
-Class adalah blueprint yang mendefinisikan variabel dan metode pada setiap objek tertentu. Class berfungsi untuk menampung isi dari program yang akan dijalankan. Atribut dan metode pada dasarnya adalah variabel dan fungsi yang dimiliki oleh class. Setiap class dapat membuat banyak objek.
+Fungsi Class adalah blueprint yang mendefinisikan variabel dan metode pada setiap objek tertentu. Class berfungsi untuk menampung isi dari program yang akan dijalankan. Atribut dan metode pada dasarnya adalah variabel dan fungsi yang dimiliki oleh class. Setiap class dapat membuat banyak objek.
 
-Fungsi Struct
-Struct adalah kumpulan dari beberapa variabel dangan tipe data yang sama ataupun berbeda yang dibungkus dalam satu variabel. Struct tidak menampung nilai, hanya mendefinisikan nama struct beserta tipe data. Struct digunakan apabila data yang ingin dikelompokkan memiliki tipe data yang berbeda.
+Fungsi Struct adalah kumpulan dari beberapa variabel dangan tipe data yang sama ataupun berbeda yang dibungkus dalam satu variabel. Struct tidak menampung nilai, hanya mendefinisikan nama struct beserta tipe data. Struct digunakan apabila data yang ingin dikelompokkan memiliki tipe data yang berbeda.
 
 ### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map!
 
