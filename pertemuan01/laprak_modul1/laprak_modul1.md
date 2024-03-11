@@ -352,9 +352,9 @@ Perbedaan array dan map
 
 ## Kesimpulan
 Memahami konsep dasar pemrograman C++ melalui penggunaan tipe data primitif, abstrak, dan koleksi dapat memberikan fondasi yang kuat dalam pemrograman serta dapat memberikan kemudahan dalam mengelola data dengan lebih efisien dan terstruktur.
- 
+
 ## Referensi
-[1] Istiqomah, N. (2023). TRANSFORMASI DIGITAL. Penerbit Tahta Media.
-[2] Gregoire, M. (2021). Professional C++. John Wiley & Sons.
-[3] Santoso, J. T. (2021). STRUKTUR DATA dan ALGORITMA (Bagian 1). Penerbit Yayasan Prima Agus Teknik, 1-333.
-[4] Zein, A., & Eriana, E. S. (2022). ALGORITMA DAN STRUKTUR DATA.
+[1] Istiqomah, N. (2023). TRANSFORMASI DIGITAL. Penerbit Tahta Media.<br/>
+[2] Gregoire, M. (2021). Professional C++. John Wiley & Sons.<br/>
+[3] Santoso, J. T. (2021). STRUKTUR DATA dan ALGORITMA (Bagian 1). Penerbit Yayasan Prima Agus Teknik, 1-333.<br/>
+[4] Zein, A., & Eriana, E. S. (2022). ALGORITMA DAN STRUKTUR DATA.<br/>
