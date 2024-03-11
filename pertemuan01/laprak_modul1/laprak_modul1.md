@@ -4,15 +4,15 @@
 ## Dasar Teori
 
 Tipe data merupakan sebuah jenis nilai yang ditampung dalam variabel yang nilainya sudah ditentukan sebelumnya. Tipe data ini wajib ada ketika ingin membuat sebuah program agar memiliki nilai yang jelas dan spesifik. Adapun beberapa tipe data dalam c++ :
-    1. Tipe data primitif
+    1. Tipe data primitif<br/>
        Tipe data primitif adalah tipe data yang sudah dibuat oleh sistem dan tidak diturunkan dari tipe data lain. Contoh tipe data primitif:
         - Int  adalah tipe data untuk menyimpan bilangan bulat dengan ukuran default 4 byte.
         - Float adalah tipe data untuk menyimpan bilangan desimal dengan ukuran default 4 byte.
         - Char adalah tipe data untuk menyimpan huruf atau karakter dengan ukuran default 2 byte.
         - Boolean adalah tipe data untuk menyimpan nilai True/False dengan ukuran default 1 byte.
-    2. Tipe data Abstrak
+    2. Tipe data Abstrak<br/>
        Tipe data abstrak adalah kelas/tipe untuk objek yang perilakunya ditentukan oleh satu set nilai dan satu set operasi. Tipe data ini dibentuk oleh programmer sendiri untuk memudahkan pemrograman dan memberikan fleksbilitas. Contohnya untuk menyederhanakan proses pemecahan masalah kita menggabungkan struktur data dengan operasinya.
-    3. Tipe data koleksi
+    3. Tipe data koleksi<br/>
        Tipe data koleksi adalah jenis tipe data yang digunakan untuk menghimpun kumpulan data atau data yang berjumlah lebih dari satu.
         - Array : Array adalah tipe data terstruktur yang dapat diterapkan pada suatu variabel yang dapat menyimpan banyak data dengan tipe     data sejenis. Array berfungsi untuk mempermudah dalam penyimpanan data. Array hanya dapat berisi sesuai jumlah kapasitas yang sudah dideklarasikan, jika indeks array diakses melebihi kapasitas, maka akan terjadi error.
         - Vektor : Standard Library C++ menyediakan container untuk menyimpan informasi, seperti std::vektor. Vektor menggantikan konsep array dengan mekanisme yang lebih fleksibel dan aman. Vektor otomatis mengalokasikan cukup memori untuk menampung elemen elemennya. Vektor bersifat dinamis artinya elemen dapat berubah pada saat runtime. Semua elemen dalam vektor harus bertipe data sama. 

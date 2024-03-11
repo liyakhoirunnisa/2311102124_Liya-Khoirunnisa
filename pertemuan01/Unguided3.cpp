@@ -1,5 +1,6 @@
 /*Oleh Liya Khoirunnisa - 2311102124*/
 
+// Contoh program fungsi map
 #include <iostream>
 #include <map> // Library untuk memggunakan fungsi map
 
