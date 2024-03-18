@@ -4,16 +4,23 @@ using namespace std;
 // PROGRAM MENCARI NILAI MAKSIMAL PADA ARRAY Liya Khoirunnisa
 int main()
 {
+    // Deklarasi variabel
     int maks, a, i = 1, lokasi;
+
+    // Input panjang array
     cout << "Masukkan panjang array: ";
     cin >> a;
     int array[a];
+
+    // Input elemen array
     cout << "Masukkan " << a << " angka\n";
     for (i = 0; i < a; i++)
     {
         cout << "Array ke-" << (i) << ": ";
         cin >> array[i];
     }
+
+    // Mencari nilai maksimum dalam array
     maks = array[0];
     for (i = 0; i < a; i++)
     {

@@ -6,25 +6,25 @@
 Array adalah suatu struktur yang terdiri dari sejumlah elemen yang memiliki  tipe data yang sama. Satu blok memori dialokasikan untuk menyimpan semua elemen dalam sebuah array yang dapat diakses dalam waktu yang cepat dengan menggunakan indeks elemen tertentu sebagai subskrip. Array lebih sederhana dan mudah digunakan
 Array dibagi menjadi :
 1.	Array satu dimensi<br/>
-Array satu dimensi tidak lain adalah kumpulan elemen-elemen identik yang tersusun dalam satu baris, tetapi isi dari elemen tersebut boleh berbeda. Array satu dimensi ini dapat disebut juga vektor.
-Deklarasi : Type_DataNama_Variabel[index];
-Contoh : int B[10];
+Array satu dimensi tidak lain adalah kumpulan elemen-elemen identik yang tersusun dalam satu baris, tetapi isi dari elemen tersebut boleh berbeda. Array satu dimensi ini dapat disebut juga vektor.<br/>
+Deklarasi : Type_DataNama_Variabel[index];<br/>
+Contoh : int B[10];<br/>
 2.	Array dua dimensi<br/>
-Array dua dimensi merupakan perluasan dari sebuah array satu dimensi yang terdiri dari beberapa baris dan beberapa kolom elemen yang bertipe data sama.
-Deklarasi : Type_DataNama_Variabel[index1] [index2];
-Contoh : int B[2][3];
+Array dua dimensi merupakan perluasan dari sebuah array satu dimensi yang terdiri dari beberapa baris dan beberapa kolom elemen yang bertipe data sama.<br/>
+Deklarasi : Type_DataNama_Variabel[index1] [index2];<br/>
+Contoh : int B[2][3];<br/>
 3.	Array multidimensi<br/>
-Array multidimensi pada dasarnya sama dengan array pada umumnya, hanya saja berbeda jumlah dimensinya. Array multidimensi tidak terlalu sering digunakan, namun biasanya digunakan untuk membuat matriks
-Deklarasi : Type_Data Nama_Variabel [index1] [ndex2] [index3];
-Contoh : int C [2][3][4];
+Array multidimensi pada dasarnya sama dengan array pada umumnya, hanya saja berbeda jumlah dimensinya. Array multidimensi tidak terlalu sering digunakan, namun biasanya digunakan untuk membuat matriks<br/>
+Deklarasi : Type_Data Nama_Variabel [index1] [ndex2] [index3];<br/>
+Contoh : int C [2][3][4];<br/>
 4.	Array empat dimensi<br/>
-Array empat dimensi adalah array yang terdiri dari empat dimensi. Setiap elemen dalam array memiliki empat dimensi yang berbeda. 
-Deklarasi : Type_Data Nama_Variabel [index1] [ndex2] [index3] [ndex4];
-Contoh : int D [2][3][4][5];
+Array empat dimensi adalah array yang terdiri dari empat dimensi. Setiap elemen dalam array memiliki empat dimensi yang berbeda.<br/>
+Deklarasi : Type_Data Nama_Variabel [index1] [ndex2] [index3] [ndex4];<br/>
+Contoh : int D [2][3][4][5];<br/>
 5.	Array lima dimensi<br/>
-Array lima dimensi adalah array yang terdiri dari lima dimensi. Setiap elemen dalam array memiliki lima dimensi yang berbeda. 
-Deklarasi : Type_Data Nama_Variabel [index1] [ndex2] [index3] [ndex4] [ndex5];
-Contoh : int E [2][3][4][5][5];
+Array lima dimensi adalah array yang terdiri dari lima dimensi. Setiap elemen dalam array memiliki lima dimensi yang berbeda.<br/>
+Deklarasi : Type_Data Nama_Variabel [index1] [ndex2] [index3] [ndex4] [ndex5];<br/>
+Contoh : int E [2][3][4][5][5];<br/>
 
 
 ## Guided 
@@ -94,11 +94,15 @@ using namespace std;
 // PROGRAM MENCARI NILAI MAKSIMAL PADA ARRAY Liya Khoirunnisa
 int main()
 {
+    // Deklarasi variabel
     int maks, a, i = 1, lokasi;
+
+    // Input panjang array
     cout << "Masukkan panjang array: ";
     cin >> a;
-
     int array[a];
+
+    // Input elemen array
     cout << "Masukkan " << a << " angka\n";
     for (i = 0; i < a; i++)
     {
@@ -106,6 +110,7 @@ int main()
         cin >> array[i];
     }
 
+    // Mencari nilai maksimum dalam array
     maks = array[0];
     for (i = 0; i < a; i++)
     {
@@ -126,7 +131,7 @@ Kode di atas digunakan untuk mencari nilai maksimun dalam array yang dimasukkan 
 ### 1. Buatlah program untuk menampilkan Output seperti berikut dengan data yang diinputkan oleh user!
 
 ```C++
-#/*oleh Liya Khoirunnisa - 2311102124*/
+/*oleh Liya Khoirunnisa - 2311102124*/
 #include <iostream>
 
 using namespace std;
@@ -176,8 +181,6 @@ int main() {
 ![unguided1](unguided1.png)
 
 Kode di atas digunakan untuk mencari nomor genap dan ganjil berdasarkan data array yang diinputkan pengguna. Elemen array yang telah diinputkan akan ditampilkan sebagai data array. Untuk mencari nomor genap dan ganjil pada data array menggunakan perulangan for. Setiap iterasi diperiksa dengan operasi modulo. Jika modulo 2 sama dengan "0" akan menampilkan nomor genap. Jika modulo 2 tidak sama dengan "0" akan menampilkan nomor ganjil.
-
-## Unguided 
 
 ### 2. Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user!
 
@@ -237,8 +240,6 @@ int main() {
 ![unguided2](unguided2.png)
 
 Kode di atas digunakan untuk mencetak nilai-nilai array yang elemen dan ukurannya diinputkan oleh pengguna. Diawali dengan pengguna diminta menginputkan ukuran array 3 dimensi. Selanjutnya, pengguna diminta menginputkan elemen dengan menggunakan loop bersarang. Untuk menampilkan output juga digunakan loop bersarang. Serta untuk menampilkan elemen yang bersih menggunakan loop bersarang.
-
-## Unguided 
 
 ### 3. Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata – rata dari suatu array dengan input yang dimasukan oleh user!
 
@@ -344,7 +345,6 @@ int main() {
 ![unguided3](unguided3.png)
 
 Kode di atas digunakan untuk mencari nilai minimum, maksimum, dan nilai rata-rata dalam suatu array. Panjang array dan elemen array diinputkan oleh pengguna. Selanjutnya, pengguna akan ditampilkan menu untuk dipilih. Tampilan menu dan proses pencarian nilai minimum, nilai maksimum, serta nilai rata-rata menggunakan fungsi "void" agar tampilan program lebih rapih. Terdapat perulangan do-while untuk melakukan looping dari switch case pilhan menu. Untuk mencari nilai maksimum dengan cara membandingkan tiap elemen array menggunakan perulangan for. Jika elemen array lebih besar dari maksimum maka nilai maksimum akan diperbarui. Untuk mencari nilai miniimum dengan cara membandingkan tiap elemen array menggunakan perulangan for. Jika elemen array lebih kecil dari minimum maka nilai minimum akan diperbarui. Untuk menghitung nilai rata-rata menggunakan perulangan for yang berguna untuk menjumlahkan semua elemen array. Kemudian total penjumlahan tersebut dibagi dengan banyaknya panjang array.
-
 
 ## Kesimpulan
 Array adalah suatu struktur yang terdiri dari sejumlah elemen yang memiliki  tipe data yang sama yang tersusun dalam satu blok memori dan dapat diakses menggunakan indeks elemen tertentu. Praktikum yang dilakukan membahas berbagai jenis array dan bagaimana cara mengakses dan memanipulasi elemen-elemen array. Jenis-jenis array terdiri dari array satu dimensi, array dua dimensi, array multidimensi, array empat dimensi, dan array lima dimensi.
