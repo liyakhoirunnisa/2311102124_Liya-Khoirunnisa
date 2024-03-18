@@ -338,7 +338,7 @@ int main() {
         }
     } while (pilihan_2124 != 4); // Berhenti melakukan perulangan jika pengguna memilih 4
 
-    return 0;
+    return 0
 }
 ```
 #### Output:
