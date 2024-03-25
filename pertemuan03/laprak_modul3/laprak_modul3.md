@@ -3,14 +3,10 @@
 
 ## Dasar Teori
 
-Linked list adalah salah satu bentuk struktur data yang berisi kumpulan data yang tersusun secara sekuensial, saling bersambungan, dan dinamis. Linked list dikaitkan dengan sejumlah simpul yang dihubungkan secara linier dengan bantuan pointer. Setiap simpul akan berbentuk struct dan memiliki satu field bertipe struct yang sama. Operasi pada linked list berisi menambah simpul, menghapus simpul, mencetak simpul, dan mencari informasi pada suatu linked list.<br/>
-![LinkedList](linked list.png)
-Pada gambar di atas, bagian pertama disebut medan informasi yang akan disimpan dan diolah. Bagian kedua disebut medan penyambung yang berisi alamat node berikutnya.<br/>
+Linked list adalah salah satu bentuk struktur data yang berisi kumpulan data yang tersusun secara sekuensial, saling bersambungan, dan dinamis. Linked list dikaitkan dengan sejumlah simpul yang dihubungkan secara linier dengan bantuan pointer. Setiap simpul akan berbentuk struct dan memiliki satu field bertipe struct yang sama. Operasi pada linked list berisi menambah simpul, menghapus simpul, mencetak simpul, dan mencari informasi pada suatu linked list. Pada linked list bagian pertama disebut medan informasi yang akan disimpan dan diolah. Sedangkan bagian kedua disebut medan penyambung yang berisi alamat node berikutnya.<br/>
 1.	Single linked list adalah suatu linked list yang memiliki satu variabel pointer saja. Dimana pointer tersebut menunjuk ke node selanjutnya dan pointer pada tail menuju ke NULL. Singke linked list terdiri dari sejumlah node dimana setiap node memiliki penunjuk berikutnya ke node berikutnya. Pembuatan single linked list dapat dilakukan menggunakan dua jenis metode, yaitu last in first out (LIFO) pengaplikasiannya dengan stack (tumpukan) dan metode first in first out pengaplikasiannya adalah queue (antrean).<br/>
-![singleLinkedList](Single Linked List.png)
 2.	Double linked list 
 Double linked list menerapkan sebuah pointer prev dan next. Pointer prev menunjuk pada node sebelumnya. Ponter next untuk menunjuk pada simpul (node) setelahnya. Dengan keberadaan 2 pointer penunjuk menjadikan double linked list lebih fleksibel dibandingkan single linked list. Double linked list dibagi menjadi dua double linked list non circular  dan double linked list circular.<br/>
-![doubleLinkedList](Double Linked List.jpg)
 
 ## Guided 
 
