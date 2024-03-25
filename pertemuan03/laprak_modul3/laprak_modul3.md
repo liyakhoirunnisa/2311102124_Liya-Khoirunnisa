@@ -930,7 +930,6 @@ int main() {
 ![unguided2b](unguided2b.png)
 ![unguided2c](unguided2c.png)
 ![unguided2d](unguided2d.png)
-![unguided2e](unguided2e.png)
 
 Kode di atas merupakan implementasi dalam penggunaan double linked list. Terdapat 8 menu yang berisi operasi double linked list, yaitu menambah data, menghapus data, mengubah data, menambahkan data produk pada posisi tertentu, menghapus data produk pada posisi tertentu, menghapus semua data, menampilkan data yang tersimpan dalam double linked list, dan menu yang terakhir adalah keluar dari program. Operasi tersebut menggunakan fungsi yang akan dipanggil dalam int main. Pengunaan fungsi bertujuan agar pembacaan kode lebih efiesien dan rapih. Setiap pengguna memilih opsi menu dan program akan mengeksekusi operasinya. Hasil operasi yang dilakukan akan ditampilkan di layar jika pengguna memilih menu 7. Program akan terus menerus berjalan hingga pengguna memilih opsi 8 yaitu keluar. Perulangan yang digunakan untuk menggulang menu menggunakan perulangan while, bertujuan agar program dapat terus berjalan dan menunggu inputan dari pengguna hingga memilih menu 8 keluar.
 
