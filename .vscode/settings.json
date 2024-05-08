@@ -1,6 +1,12 @@
 {
-    "files.associations": {
-        "iomanip": "cpp",
-        "iostream": "cpp"
-    }
+  "files.associations": {
+    "iomanip": "cpp",
+    "iostream": "cpp"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  }
 }
