@@ -4,17 +4,18 @@
 
 ## Dasar Teori
 
-Stack adalah struktur data yang memungkinkan melakukan penyisipan/penambahan dan penghapusan elemen data hanya pada satu tempat di ujung yang disebut puncak tumpukan. Elemen dalam stack disimpan berurutan dalam satu jalur linier. Metode untuk mengakses data di dalam stack adalah dengan metode Last In First Out (LIFO) yang dimana data terakhir kali yang masuk ke dalam stack adalah data yang pertama kali keluar. Konsep stack seringkali diilustrasikan dengan tumpukan piring, dimana piring baru diambil atau diletakkan di bagian atas tumpukan piring. Ciri stack lainnya adalah tidak memiliki nomor indeks untuk setiap elemen, oleh sebab itu elemen data yang berada pada posisi tengah tidak dapat diakses secara langsung. Stack dapat diaplikasikan untuk simulasi stack dalam dunia nyata, pemanggilan fungsi/procedure, rekursif, penanganan interupsi, evaluasi ekspresi, konversi notasi infiks ke notasi postfiks dan konversi bilangan basis 10 (desimal) ke basis 2 (biner).<br/>
+Stack adalah struktur data yang memungkinkan melakukan penyisipan/penambahan dan penghapusan elemen data hanya pada satu tempat di ujung yang disebut puncak tumpukan. Elemen dalam stack disimpan berurutan dalam satu jalur linier. Metode untuk mengakses data di dalam stack adalah dengan metode Last In First Out (LIFO) yang dimana data terakhir kali yang masuk ke dalam stack adalah data yang pertama kali keluar. Konsep stack seringkali diilustrasikan dengan tumpukan piring, dimana piring baru diambil atau diletakkan di bagian atas tumpukan piring. Ciri stack lainnya adalah tidak memiliki nomor indeks untuk setiap elemen, oleh sebab itu elemen data yang berada pada posisi tengah tidak dapat diakses secara langsung. Stack dapat diaplikasikan untuk simulasi stack dalam dunia nyata, pemanggilan fungsi/procedure, rekursif, penanganan interupsi, evaluasi ekspresi, konversi notasi infiks ke notasi postfiks dan konversi bilangan basis 10 (desimal) ke basis 2 (biner).<br/><br/>
 Struktur data stack memiliki beberapa operasi:<br/>
-• push : Untuk menambahkan elemen ke dalam stack.<br/>
-• pop : Untuk mengambil data dari stack (data paling atas akan dikeluarkan dari stack).<br/>
-• peek : Untuk melihat data pada posisi tertentu.<br/>
-• isEmpty : Untuk mengidentifikasi apakah stack masih kosong.<br/>
-• isFull : Untuk memeriksa apakah stack sudah penuh.<br/>
-• count : Untuk menghitung data pada stack.<br/>
-• change : Untuk mengubah data pada posisi tertentu.<br/>
-• display : Untuk mencetak semua data pada stack.<br/>
-• destroy : Untuk menghapus semua data pada stack.<br/>
+
+- push : Untuk menambahkan elemen ke dalam stack. <br/>
+- pop : Untuk mengambil data dari stack (data paling atas akan dikeluarkan dari stack).<br/>
+- peek : Untuk melihat data pada posisi tertentu.<br/>
+- isEmpty : Untuk mengidentifikasi apakah stack masih kosong. <br/>
+- isFull : Untuk memeriksa apakah stack sudah penuh. <br/>
+- count : Untuk menghitung data pada stack. <br/>
+- change : Untuk mengubah data pada posisi tertentu. <br/>
+- display : Untuk mencetak semua data pada stack. <br/>
+- destroy : Untuk menghapus semua data pada stack.
 
 ## Guided
 
