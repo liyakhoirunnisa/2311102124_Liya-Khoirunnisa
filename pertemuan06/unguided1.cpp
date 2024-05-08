@@ -1,58 +1,56 @@
-/*oleh Liya Khoirunnisa - 2311102124*/
 #include <iostream>
 using namespace std;
 
 /// PROGRAM STACK Liya Khoirunnisa
 
 // Inisialisasi array
-string kalimat[5];
-int maksimal = 5, top = 0;
+char isi_2124[10];
+int maksimal_2124 = 5, top_2124 = -1;
 
 // Fungsi untuk mengecek apakah stack penuh
-bool isFull()
+bool isFull_2124()
 {
-    return (top == maksimal);
+    return (top_2124 == maksimal_2124 - 1);
 }
 
 // Fungsi untuk mengecek apakah stack kosong
-bool isEmpty()
+bool isEmpty_2124()
 {
-    return (top == 0);
+    return (top_2124 == -1);
 }
 
 // Fungsi untuk menambahkan data ke dalam stack
-void pushArrayKalimat(string data)
+void pushArrayKalimat_2124(char data_2124)
 {
-    if (isFull())
+    if (isFull_2124())
     {
-        cout << "Data telah penuh" << endl;
+        cout << "Data telah penuh\n";
     }
     else
     {
-        kalimat[top] = data;
-        top++;
+        top_2124++;
+        isi_2124[top_2124] = data_2124;
     }
 }
 
 // Fungsi untuk menghapus data di stack
-void popArrayKalimat()
+void popArrayKalimat_2124()
 {
-    if (isEmpty())
+    if (isEmpty_2124())
     {
-        cout << "Tidak ada data yang dihapus" << endl;
+        cout << "Tidak ada data yang dihapus\n";
     }
     else
     {
-        kalimat[top - 1] = "";
-        top--;
+        top_2124--;
     }
 }
 
 int main()
 {
     // Deklarasi variabel
-    string kalimat;
-    int i, j;
+    string kalimat_2124;
+    int j;
     bool palindrom = true;
 
     // Menampilkan judul program
@@ -62,18 +60,26 @@ int main()
 
     // Input Kalimat
     cout << "Masukkan Kalimat : ";
-    cin >> kalimat;
-    j = kalimat.length();
+    cin >> kalimat_2124;
+    j = kalimat_2124.length();
+
+    // Menambahkan kalimat ke dalam stack
+    for (int i = 0; i < j; i++)
+    {
+        pushArrayKalimat_2124(kalimat_2124[i]);
+    }
 
     // Cek Palindrom
-    for (i = 0; i < j; i++)
+    for (int i = 0; i < j; i++)
     {
-        if (kalimat[i] != kalimat[j - i - 1])
+        if (kalimat_2124[i] != isi_2124[top_2124])
         {
             palindrom = false;
             break;
         }
+        popArrayKalimat_2124();
     }
+
     if (palindrom == true)
     {
         cout << "Kalimat tersebut adalah : Palindrom\n";
@@ -82,6 +88,6 @@ int main()
     {
         cout << "Kalimat tersebut adalah : Bukan Palindrom\n";
     }
-    cout << "===========================================\n";
+    cout << "===========================================\n\n";
     return 0;
 }

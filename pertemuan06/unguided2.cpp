@@ -5,70 +5,71 @@ using namespace std;
 /// PROGRAM STACK Liya Khoirunnisa
 
 // Inisialisasi array
-char isi[100];
-int maksimal = 100, top = 0;
+char isi_2124[50];
+int maksimal_2124 = 50, top_2124 = 0;
 
 // Fungsi untuk mengecek apakah stack penuh
-bool isFull()
+bool isFull_2124()
 {
-    return (top == maksimal);
+    return (top_2124 == maksimal_2124);
 }
 
 // Fungsi untuk mengecek apakah stack kosong
-bool isEmpty()
+bool isEmpty_2124()
 {
-    return (top == 0);
+    return (top_2124 == 0);
 }
 
 // Fungsi untuk menambahkan data ke dalam stack
-void PUSH(char x)
+void pushArrayKalimat_2124(char data_2124)
 {
-    if (top == maksimal)
+    if (top_2124 == maksimal_2124)
     {
-        cout << "Tumpukan Sudah Penuh";
+        cout << "Data telah penuh";
     }
     else
     {
-        top = top + 1;
-        isi[top] = x;
+        top_2124 = top_2124 + 1;
+        isi_2124[top_2124] = data_2124;
     }
 }
 
 // Fungsi untuk menghapus data di stack
-char POP()
+char popArrayKalimat_2124()
 {
-    char hasil;
-    if (top == 0)
+    char hasil_2124;
+    if (top_2124 == 0)
     {
-        cout << "Tumpukan sudah kosong";
-        hasil = ' ';
+        cout << "Tidak ada data yang dihapus";
+        hasil_2124 = ' ';
     }
     else
     {
-        hasil = isi[top];
-        top = top - 1;
+        hasil_2124 = isi_2124[top_2124];
+        top_2124 = top_2124 - 1;
     }
-    return hasil;
+    return hasil_2124;
 }
 
 // program utama
 int main()
 {
     // Deklarasi variabel
-    int i;
-    string kalimat;
+    string kalimat_2124;
+    int j;
     cout << "===========================================\n";
-    cout << "Program untuk Membalik kalimat\n";
+    cout << "       Program untuk Membalik kalimat      \n";
     cout << "===========================================\n";
 
     // Inputkan kalimat yang akan dibalik
-    cout << "Masukkan kata : ";
-    getline(cin, kalimat);
+    cout << "Masukkan Kata : ";
+    getline(cin, kalimat_2124);
+    j = kalimat_2124.length();
 
     // Menambahkan data ke dalam stack
-    for (i = 0; i < kalimat.length(); i++)
+    for (int i = 0; i < j; i++)
     {
-        PUSH(kalimat[i]);
+        pushArrayKalimat_2124(kalimat_2124[i]);
     }
 
     // Mencetak data
@@ -76,9 +77,9 @@ int main()
     cout << "\nData : ";
 
     // Menghapus data di stack
-    for (i = 0; i < kalimat[i]; i++)
+    for (int i = 0; i < j; i++)
     {
-        cout << POP();
+        cout << popArrayKalimat_2124();
     }
     cout << "\n===========================================\n";
     return 0;
