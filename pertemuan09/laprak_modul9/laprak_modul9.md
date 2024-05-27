@@ -4,49 +4,24 @@
 
 ## Dasar Teori
 
-A. **Graph**
+A. **Graph**<br/>
 Graf merupakan representasi dari suatu permasalahan dengan menggunakan objek-objek berupa titik, dimana setiap lingkaran tersebut dapat terhubung satu sama lain dengan menggunakan sekumpulan titik. Graf terdiri dari pasangan terurut himpunan (𝑉,𝐸) yang dinotasikan dengan G = (V, E). V adalah himpunan tidak kosong dari simpul-simpul (vertex) dan E adalah himpunan sisi (edges) yang menghubungkan dua simpul dalam graf. Beberapa contoh pengaplikasian teori graf yaitu penyusunan struktur organisasi, pengambilan mata kuliah yang divisualisasikan dalam bentuk bagan alir, maps, rangkaian jaringan listrik, dan lain lain. <br/><br/>
-**Jenis-jenis Graph:**<br/>
+**Jenis-jenis Graph:**<br/> 1. **Graph berarah (directed graph):** Memungkinkan kita memodelkan situasi dengan mementingkan arah hubungan. Karakteristik graf berarah yaitu setiap sisi memiliki arah dari satu simpul ke simpul lain dan terdapat dua jenis derajat, yaitu derajat masuk dan derajat keluar. Dimana derajat masuk yaitu menghitung jumlah busur yang masuk ke simpul. Sementara derajat keluar yaitu menghitung jumlah busur yang keluar dari simpul. Contohnya dalam manajemen proyek, beberapa tugas perlu diselesaikan sebelum memulai tugas lain.<br> 2. **Graph tak berarah (undirected graph):** Memungkinkan kita memodelkan situasi dengan tidak memiliki arah hubungan khusus. Karakteristik graf tak berarah yaitu hubungan antar simpul dua arah dan hanya memiliki satu jenis derajat yang terhubung ke simpul. Contohnya dalam jaringan komunikasi peer to peer, setiap node berkomunikasi langsung tanpa mementingkan arah.<br> 3. **Weight Graph:** Graph yang mempunyai nilai pada tiap edgenya. Karakteristik weight graph yaitu setiap sisi memiliki bobot dan menggunakan algoritma khusus untuk untuk menemukan jalur terpendek dalam graf berbobot. Cocok digunakan dalam aplikasi yang memerlukan pengukuran jarak terpendek, biaya terendah , dan lain sebagainya.<br/><br/>
+**Representasi Graf:**<br/> 1. **Representasi dengan Matriks**<br/>
+Graf dapat direpresentasikan dalam bentuk matriks yang memudahkan dalam perhitungan lintasan terpendek. Terdapat dua jenis representasi berdasarkan jenis graf : <br/>
+a. **Berarah** <br/>
+Cara menyatakan graf berarah dalam matriks tidak jauh berbeda dengan cara menyatakan graf tak berarah dalam suatu matriks. Perbedaanya hanya terletak pada keikutsertaan informasi tentang arah garis yang terdapat dalam graf berarah. Berikut langkah-langkah representasi graf kedalam matriks: <br/> - Jarak titik Vi jika ada garis yang menghubungkan titik vi dan vj <br/> - ∞ jika tidak ada garis yang menghubungkan titik vi dan vj<br/> - 0 jika I = j jika berhubungan dengan dirinya sendiri<br/>
+b. **Tak berarah**<br/>
+Cara menyatakan graf tak berarah dalam matriks yaitu dengan menghubungkan antar simpul dua arah dan simetris. Berikut langkah-langkah representasi graf tak berarah: <br/> - Jarak titik Vi ke Vj dimasukkan ke dalam elemen matriks<br/> - ∞ jika tidak ada garis yang menghubungkan titik vi dan vj, nilai tak terhingga digunakan<br/> - 0 jika I = j jika berhubungan dengan dirinya sendiri<br/> 2. **Representasi dengan Linked List**<br/>
+Representasi graf dengan linked list adalah cara yang efisien untuk menyimpan graf, terutama graf yang jarang, dimana sebagian besar simpul tidak saling terhubung langsung. Representasi ini perlu membedakan antara vertex dan edge. Struktur keduanya bisa sama, bisa juga tidak sama, tergantung kebutuhan. <br/><br>
+B. **Tree**<br/>
+Teori tree adalah teori yang digunakan untuk menyelesaikan permasalahan dengan menggunakan analogi permasalahan ke dalam bentuk pohon yang kemudian mencari solusi permasalahannya. Teori tree digunakan dalam penerapan konsep graf yang tidak berarah dan terhubung. Tree merupakan sekumpulan simpul yang saling terhubung membentuk struktur sebuah pohon. Setiap simpul yang terhubung, tidak memiliki simpul anak dan satu simpul ayah. Simpul yang tidak mempunyai simpul ayah disebut simpul akar. Tree termasuk struktur data non linear. Dalam struktur tree, hanya terdapat satu jalur yang menghubungkan satu simpul ke simpul yang lain. Struktur tree merupakan struktur yang mengharuskan kita mengorganisasikan informasi berdasarkan struktur logis, mengakses suatu elemen dengan khusus, dan menggambarkan data yang memiliki struktur yang hirarkis. Penerapan struktur data penting dalam proses pembuatan progam komputer untuk meningkatkan kinerja program. Sebagai contoh, seorang direktur di perusahaan membawahi wakil direktur. Setiap orang membuat model data pohon sendiri beserta komponen pengelolaan datanya. Selain itu, struktur pohon yang dikelola pada struktur data eksternal tidak sering dibahas.<br/><br/>
+**Operasi pada Tree**<br/> - Create: Untuk membuat binary tree baru yang masih kosong. <br/> - Clear: Untuk mengosongkan binary tree yang ada atau menghapus semua node pada binary tree. <br/> - isEmpty: Untuk memeriksa apakah binary tree masih kosong atau tidak. <br/> - Insert: Untuk menambahkan node ke dalam tree. <br/> - Find: Untuk mencari root, parent, left child, atau right child dari suatu node. <br/> - Update: Untuk mengubah isi dari node yang ditunjuk oleh pointer current. <br/> - Retrive: Untuk mengetahui isi dari node yang ditunjuk pointer current. <br/> - Delete Sub: Untuk menghapus subtree yang ditunjuk pointer current. <br/> - Characteristic: Untuk mengetahui karakteristik dari suatu tree. <br/> - Traverse: Untuk mengunjungi semua node pada tree dengan cara traversal. Terdapat 3 metode traversal, yakni Pre-Order, In-Order, dan Post-Order. <br/>
+**Metode Transversal:**<br/>
 
-1. **Graph berarah (directed graph):** Memungkinkan kita memodelkan situasi dengan mementingkan arah hubungan. Karakteristik graf berarah yaitu setiap sisi memiliki arah dari satu simpul ke simpul lain dan terdapat dua jenis derajat, yaitu derajat masuk dan derajat keluar. Dimana derajat masuk yaitu menghitung jumlah busur yang masuk ke simpul. Sementara derajat keluar yaitu menghitung jumlah busur yang keluar dari simpul. Contohnya dalam manajemen proyek, beberapa tugas perlu diselesaikan sebelum memulai tugas lain.<br>
-2. **Graph tak berarah (undirected graph):** Memungkinkan kita memodelkan situasi dengan tidak memiliki arah hubungan khusus. Karakteristik graf tak berarah yaitu hubungan antar simpul dua arah dan hanya memiliki satu jenis derajat yang terhubung ke simpul. Contohnya dalam jaringan komunikasi peer to peer, setiap node berkomunikasi langsung tanpa mementingkan arah.<br>
-3. **Weight Graph:** Graph yang mempunyai nilai pada tiap edgenya. Karakteristik weight graph yaitu setiap sisi memiliki bobot dan menggunakan algoritma khusus untuk untuk menemukan jalur terpendek dalam graf berbobot. Cocok digunakan dalam aplikasi yang memerlukan pengukuran jarak terpendek, biaya terendah , dan lain sebagainya.<br/><br/>
-   **Representasi Graf:**<br/>
-4. **Representasi dengan Matriks**<br/>
-   Graf dapat direpresentasikan dalam bentuk matriks yang memudahkan dalam perhitungan lintasan terpendek. Terdapat dua jenis representasi berdasarkan jenis graf : <br/>
-   a. **Berarah** <br/>
-   Cara menyatakan graf berarah dalam matriks tidak jauh berbeda dengan cara menyatakan graf tak berarah dalam suatu matriks. Perbedaanya hanya terletak pada keikutsertaan informasi tentang arah garis yang terdapat dalam graf berarah. Berikut langkah-langkah representasi graf kedalam matriks: <br/>
-
-- Jarak titik Vi jika ada garis yang menghubungkan titik vi dan vj <br/>
-- ∞ jika tidak ada garis yang menghubungkan titik vi dan vj<br/>
-- 0 jika I = j jika berhubungan dengan dirinya sendiri<br/>
-  b. **Tak berarah**<br/>
-  Cara menyatakan graf tak berarah dalam matriks yaitu dengan menghubungkan antar simpul dua arah dan simetris. Berikut langkah-langkah representasi graf tak berarah: <br/>
-- Jarak titik Vi ke Vj dimasukkan ke dalam elemen matriks<br/>
-- ∞ jika tidak ada garis yang menghubungkan titik vi dan vj, nilai tak terhingga digunakan<br/>
-- 0 jika I = j jika berhubungan dengan dirinya sendiri<br/>
-
-2. **Representasi dengan Linked List**<br/>
-   Representasi graf dengan linked list adalah cara yang efisien untuk menyimpan graf, terutama graf yang jarang, dimana sebagian besar simpul tidak saling terhubung langsung. Representasi ini perlu membedakan antara vertex dan edge. Struktur keduanya bisa sama, bisa juga tidak sama, tergantung kebutuhan. <br/><br>
-   B. **Tree**<br/>
-   Teori tree adalah teori yang digunakan untuk menyelesaikan permasalahan dengan menggunakan analogi permasalahan ke dalam bentuk pohon yang kemudian mencari solusi permasalahannya. Teori tree digunakan dalam penerapan konsep graf yang tidak berarah dan terhubung. Tree merupakan sekumpulan simpul yang saling terhubung membentuk struktur sebuah pohon. Setiap simpul yang terhubung, tidak memiliki simpul anak dan satu simpul ayah. Simpul yang tidak mempunyai simpul ayah disebut simpul akar. Tree termasuk struktur data non linear. Dalam struktur tree, hanya terdapat satu jalur yang menghubungkan satu simpul ke simpul yang lain. Struktur tree merupakan struktur yang mengharuskan kita mengorganisasikan informasi berdasarkan struktur logis, mengakses suatu elemen dengan khusus, dan menggambarkan data yang memiliki struktur yang hirarkis. Penerapan struktur data penting dalam proses pembuatan progam komputer untuk meningkatkan kinerja program. Sebagai contoh, seorang direktur di perusahaan membawahi wakil direktur. Setiap orang membuat model data pohon sendiri beserta komponen pengelolaan datanya. Selain itu, struktur pohon yang dikelola pada struktur data eksternal tidak sering dibahas.<br/><br/>
-   **Operasi pada Tree**<br/>
-
-- Create: Untuk membuat binary tree baru yang masih kosong. <br/>
-- Clear: Untuk mengosongkan binary tree yang ada atau menghapus semua node pada binary tree. <br/>
-- isEmpty: Untuk memeriksa apakah binary tree masih kosong atau tidak. <br/>
-- Insert: Untuk menambahkan node ke dalam tree. <br/>
-- Find: Untuk mencari root, parent, left child, atau right child dari suatu node. <br/>
-- Update: Untuk mengubah isi dari node yang ditunjuk oleh pointer current. <br/>
-- Retrive: Untuk mengetahui isi dari node yang ditunjuk pointer current. <br/>
-- Delete Sub: Untuk menghapus subtree yang ditunjuk pointer current. <br/>
-- Characteristic: Untuk mengetahui karakteristik dari suatu tree. <br/>
-- Traverse: Untuk mengunjungi semua node pada tree dengan cara traversal. Terdapat 3 metode traversal, yakni Pre-Order, In-Order, dan Post-Order. <br/>
-  **Metode Transversal:**<br/>
-
-1. **Pre-Order:** Diawali dengan mengunjungi node akar terlebih dahulu kemudian mengunjungi semua anak dari yang paling kiri ke yang paling kanan. Proses ini dilakukan berulang terus menerus
-2. **In-Order:** Diawali dengan mengunjungi subtree kiri terlebih dahulu, selanjutnya mengunjungi node akar, dan yang terakhir mengunjungi subtree kanan. Metode ini berguna untuk pohon pencarian biner karena mengunjungi node dengan urutan menaik.
-3. **Post Order:** Diawali dengan mengunjungi semua anak dari yang paling kiri ke yang paling kanan terlebih dahulu, kemudian mengunjungi node akar. Metode ini berguna untuk menghapus atau membebaskan node dalam pohon
+    1. **Pre-Order:** Diawali dengan mengunjungi node akar terlebih dahulu kemudian mengunjungi semua anak dari yang paling kiri ke yang paling kanan. Proses ini dilakukan berulang terus menerus
+    2. **In-Order:** Diawali dengan mengunjungi subtree kiri terlebih dahulu, selanjutnya mengunjungi node akar, dan yang terakhir mengunjungi subtree kanan. Metode ini berguna untuk pohon pencarian biner karena mengunjungi node dengan urutan menaik.
+    3. **Post Order:** Diawali dengan mengunjungi semua anak dari yang paling kiri ke yang paling kanan terlebih dahulu, kemudian mengunjungi node akar. Metode ini berguna untuk menghapus atau membebaskan node dalam pohon
 
 ## Guided
 
