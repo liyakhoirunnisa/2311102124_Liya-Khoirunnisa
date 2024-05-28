@@ -16,16 +16,16 @@ Graf merupakan representasi dari suatu permasalahan dengan menggunakan objek-obj
 **Representasi Graf:**<br/>
 
 1. **Representasi dengan Matriks**<br/>
-   a. **Berarah** <br/>
-   Cara menyatakan graf berarah dalam matriks tidak jauh berbeda dengan cara menyatakan graf tak berarah dalam suatu matriks. Perbedaanya hanya terletak pada keikutsertaan informasi tentang arah garis yang terdapat dalam graf berarah. Berikut langkah-langkah representasi graf kedalam matriks: <br/>
-   - Jarak titik Vi jika ada garis yang menghubungkan titik vi dan vj <br/>
-   - ∞ jika tidak ada garis yang menghubungkan titik vi dan vj<br/>
-   - 0 jika I = j jika berhubungan dengan dirinya sendiri<br/>
-     b. **Tak berarah**<br/>
+   - **Berarah** <br/>
+     Cara menyatakan graf berarah dalam matriks tidak jauh berbeda dengan cara menyatakan graf tak berarah dalam suatu matriks. Perbedaanya hanya terletak pada keikutsertaan informasi tentang arah garis yang terdapat dalam graf berarah. Berikut langkah-langkah representasi graf kedalam matriks: <br/>
+     - Jarak titik Vi jika ada garis yang menghubungkan titik vi dan vj <br/>
+     - ∞ jika tidak ada garis yang menghubungkan titik vi dan vj<br/>
+     - 0 jika I = j jika berhubungan dengan dirinya sendiri<br/>
+   - **Tak berarah**<br/>
      Cara menyatakan graf tak berarah dalam matriks yaitu dengan menghubungkan antar simpul dua arah dan simetris. Berikut langkah-langkah representasi graf tak berarah: <br/>
-   - Jarak titik Vi ke Vj dimasukkan ke dalam elemen matriks<br/>
-   - ∞ jika tidak ada garis yang menghubungkan titik vi dan vj, nilai tak terhingga digunakan<br/>
-   - 0 jika I = j jika berhubungan dengan dirinya sendiri<br/>
+     - Jarak titik Vi ke Vj dimasukkan ke dalam elemen matriks<br/>
+     - ∞ jika tidak ada garis yang menghubungkan titik vi dan vj, nilai tak terhingga digunakan<br/>
+     - 0 jika I = j jika berhubungan dengan dirinya sendiri<br/>
 2. **Representasi dengan Linked List**<br/>
    Representasi graf dengan linked list adalah cara yang efisien untuk menyimpan graf, terutama graf yang jarang, dimana sebagian besar simpul tidak saling terhubung langsung. Representasi ini perlu membedakan antara vertex dan edge. Struktur keduanya bisa sama, bisa juga tidak sama, tergantung kebutuhan. <br/><br>
 
